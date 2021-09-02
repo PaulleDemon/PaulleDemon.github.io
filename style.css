@@ -1,0 +1,152 @@
+html {
+    scroll-behavior: smooth;
+    overflow-y:scroll;
+}
+
+body{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+h1{
+    font-size: 30px;;
+}
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: 0px;
+    /* position: sticky;
+    top: 0px; */
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+    
+    color: #ffffff;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  /* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgba(68, 65, 65, 0.171);
+  }
+  
+  /* Create an active/current tablink class */
+.tab button.active {
+	background-color: rgba(68, 65, 65, 0.459);
+	border-bottom: 2px solid rgb(0, 8, 116)
+  }
+  
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+   /* border: 1px solid #ccc;*/
+    border-top: none;
+  }
+
+
+#about{
+	border: 2px solid rgba(82, 81, 81, 0.596);
+    border-radius: 5px;
+}
+
+#aboutme{
+    color: #ffffff;
+}
+
+#exp-prj{
+	color: #ffffff;
+}
+
+.text-contents{
+	color: #b6b0b0;
+    font-size: 18px;
+	font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+	line-height: 1.6;
+}
+
+.links{
+	font-style: italic;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.links:hover{
+	color: #87f6fc;
+}
+
+.pypiLinks{
+	font-style: italic;
+	color: #ffffff;
+	text-decoration: none; 
+}
+
+.pypiLinks:hover{
+	color: #5395cc;
+}
+
+#hire-me{
+  border: none;
+}
+
+#aboutSection{
+  border: none;
+}
+
+#thumbnail{
+    width: 100%;
+    max-height: 200px;
+    height: auto;
+}
+
+#circle-parent{
+  display: flex;
+  justify-content: center;
+}
+
+#circle{
+    border: 2px solid rgb(146, 144, 144);
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: relative;
+
+    width: 20vh;
+    height: 20vh;
+    overflow: hidden;
+
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 100px;
+    min-height: 100px;
+
+    top: -50px;
+    filter: drop-shadow(0px 0px 4px #2EAA9E);
+
+}
+
+#location{
+    width: 25px;
+    height: 25px;
+}
+
+#projects{
+	display: block;
+	text-align:center;
+    margin: auto;
+}
