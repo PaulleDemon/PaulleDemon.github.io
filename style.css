@@ -12,18 +12,18 @@ h1{
     font-size: 30px;;
 }
 
-
 /* Style the tab */
 .tab {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     overflow: hidden;
-    /* border: 1px solid #ccc; */
+    background-color: #020202;
     margin: 5px;
     display: flex;
     justify-content: center;
     border: none;
     outline: 0px;
-    /* position: sticky;
-    top: 0px; */
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -46,19 +46,16 @@ h1{
   }
   
   /* Create an active/current tablink class */
-.tab button.active {
+.tab button.active, .tab button:focus, .tablinks.active-btn{
 	background-color: rgba(68, 65, 65, 0.459);
-	border-bottom: 2px solid rgb(0, 8, 116)
-  }
-  
-  /* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-   /* border: 1px solid #ccc;*/
-    border-top: none;
+	border-bottom: 2px solid rgb(0, 8, 116);
   }
 
+  /* Style the tab content */
+.tabcontent {
+    padding: 6px 12px;
+    border-top: none;
+  }
 
 #about{
 	border: 2px solid rgba(82, 81, 81, 0.596);

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul</title>
     <link rel="stylesheet" href="style.css">
-    <script src="changeTabs.js"></script>
+   
 </head>
 
 
@@ -25,19 +25,19 @@
 
     <!-- tabs - aboutme/hireme -->
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'aboutSection')" id="defaultOpen">About me</button>
-        <button class="tablinks" onclick="openTab(event, 'hire-me')">Hire me</button>
+        <button class="tablinks" onclick="openTab('about-section', 'about_me_btn')" id="about_me_btn">About me</button>
+        <button class="tablinks" onclick="openTab('hire-me', 'hire_me_btn')", id="hire_me_btn">Hire me</button>
     </div>
 
     <!-- hire me section -->
-    <div id="hire-me" class="tabcontent text-contents">
+    <div id="hire-me" class="tabcontent text-contents" style="display:none;">
         
         Currently not looking for full-time job. But I am available for hire on <a href=" https://www.fiverr.com/art_paul" target="_blank" rel="noopener noreferrer" class="links">fiverr</a>.
 
     </div>
 
     <!-- everything else -->
-    <div id="aboutSection" class="tabcontent">
+    <div id="about-section" class="tabcontent">
         
         <!-- about me section -->
         <div id="about" class="text-contents">
@@ -87,18 +87,21 @@
         
         <div id="projects">
 
-            <a href="https://stackexchange.com/users/21676875">
+            <a href="https://stackexchange.com/users/21676875/art?tab=accounts" target="_blank" rel="noopener noreferrer">
             <img src="https://stackexchange.com/users/flair/21676875.png" width="208" height="58" alt="profile for Art on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Art on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
         
             <a href="https://github.com/PaulleDemon" target="_blank" rel="noopener noreferrer">
             <img src="Images\GitHub-Mark-Light-64px.png" alt="Github profile" title="Github profile"></a>
 
-            <a href="https://github.com/PaulleDemon" target="_blank" rel="noopener noreferrer"><img src="Images\ArtStation-logomark-white.png" alt="Github profile" title="Github profile"></a>
+            <a href="https://www.artstation.com/uf784078a" target="_blank" rel="noopener noreferrer"><img src="Images\ArtStation-logomark-white.png" alt="Github profile" title="Github profile"></a>
 
         </div>
 
     </div>
 
 </body>
+
+
+<script src="changeTabs.js"></script>
 
 </html>
