@@ -105,10 +105,17 @@ h1{
 #aboutSection{
   border: none;
 }
-
+.thumbnail-container{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 200px;
+  background-color: red;
+}
 #thumbnail{
     width: 100%;
-    max-height: 200px;
+    /* height: 100%; */
+    max-height: 500px;
     height: auto;
 }
 
@@ -123,12 +130,12 @@ h1{
     background-color: #ffffff;
     position: relative;
 
-    width: 20vh;
-    height: 20vh;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
 
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 150px;
+    max-height: 150px;
     min-width: 100px;
     min-height: 100px;
 
