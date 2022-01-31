@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     overflow-y:scroll;
+    box-sizing: border-box;
 }
 
 body{
@@ -11,6 +12,24 @@ body{
 
 h1{
     font-size: 30px;;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7c7b7b8a;
+  border-radius: 10px;
 }
 
 /* Style the tab */
@@ -114,7 +133,7 @@ h1{
 }
 #thumbnail{
     width: 100%;
-    height: 200px;
+    height: auto;
 }
 
 #circle-parent{
@@ -151,4 +170,22 @@ h1{
 	display: block;
 	text-align:center;
     margin: auto;
+}
+
+.reviews-container{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.review-container{
+  display: flex;
+  margin: 4px;
+  height: 250px;
+  /* width: 650px; */
+}
+
+.review-img{
+  width: auto;
+  height: 100%;
 }
