@@ -167,8 +167,43 @@ a{
 
     }
 
+/* ------------------ profiles ------------------------- */
+
+.profiles{
+    display: flex;
+    justify-content: center;
+}
+
+    .profiles img{
+        width: 50px;
+        margin: 20px;
+    }
+
 @media only screen and (max-width: 600px) {
     .header{
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
         justify-content: center;
+        align-items: center;
+        height: fit-content;
     }
-  }
+
+    .section{
+        margin-top: 60px;
+    }
+
+    .center-header-links, .end-header-links{
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+}
+
+
+.hidden{
+    display: none;
+}
